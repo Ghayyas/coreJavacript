@@ -67,6 +67,7 @@ var quizArray = [
 
  function next(){
      quizIndex = quizIndex+1;
+     
      var correctAnwer = quizArray[quizIndex-1].correctAnwer;
      
     var radioName =  document.querySelector('input[name="radio"]:checked').value;
@@ -93,11 +94,6 @@ var quizArray = [
              document.getElementById('quizStarted').setAttribute('style','visibility:hidden');
              document.querySelector('score').setAttribute('style','visibility:visible');
      }
-     
-     
-     
-     
-     
      
      
      
